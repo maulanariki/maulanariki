@@ -28,7 +28,7 @@ body {
   overflow: hidden;
   position: relative;
   text-align: center;
-  cursor: default;
+  cursor: pointer;
 }
 
 .hovereffect .overlay {
@@ -128,7 +128,7 @@ ul.navbar-nav {
 
   ul.navbar-nav {
     position: absolute;
-    top: 100px;
+    top: 25%;
 
     display: flex;
     align-items: center;
@@ -138,14 +138,19 @@ ul.navbar-nav {
     li {
       opacity: 0;
       transition: opacity 0.4s cubic-bezier(0.58, 0.3, 0.005, 1);
+      transition: font-weight 0.5s ease-out 100ms;
       padding: 0;
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
       a {
         color: black;
         font-size: 40px;
         padding: 0;
       }
     }
+  }
+
+  li:hover {
+    font-weight: bold;
   }
 
   &.show {
@@ -179,4 +184,11 @@ ul.navbar-nav {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   font-weight: 700 !important;
+}
+
+.trans-bolder {
+  transition: font-weight 0.5s ease-out 100ms;
+}
+.trans-bolder:hover {
+  font-weight: bolder;
 }
