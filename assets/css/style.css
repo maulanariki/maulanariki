@@ -192,3 +192,13 @@ ul.navbar-nav {
 .trans-bolder:hover {
   font-weight: bolder;
 }
+
+.h4position {
+  position: absolute;
+  top: 43%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
