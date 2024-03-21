@@ -126,28 +126,7 @@ ul.navbar-nav {
   height: 100%;
   /* transition: all 0.4s; */
 
-  ul.navbar-nav {
-    position: absolute;
-    top: 25%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    li {
-      opacity: 0;
-      transition: opacity 0.4s cubic-bezier(0.58, 0.3, 0.005, 1);
-      transition: font-weight 0.5s ease-out 100ms;
-      padding: 0;
-      /* margin-bottom: 20px; */
-      a {
-        color: black;
-        font-size: 40px;
-        padding: 0;
-      }
-    }
-  }
+  
 
   li:hover {
     font-weight: bold;
@@ -177,6 +156,29 @@ ul.navbar-nav {
       &:nth-child(6) {
         transition-delay: 0.36s;
       } */
+    }
+  }
+}
+
+ul.navbar-nav {
+  position: absolute;
+  top: 25%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  li {
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.58, 0.3, 0.005, 1);
+    transition: font-weight 0.5s ease-out 100ms;
+    padding: 0;
+    /* margin-bottom: 20px; */
+    a {
+      color: black;
+      font-size: 40px;
+      padding: 0;
     }
   }
 }
